@@ -35,7 +35,7 @@ const NavigationMenu = () => {
                         className="fixed left-0 top-0 flex h-full w-full items-center justify-center bg-slate-950"
                     >
                         <motion.div className="flex flex-row items-center justify-center gap-4 rounded-md bg-slate-950 p-8">
-                            <Button variant="outline" className="focus:outline-none">
+                            <Button variant="outline" className="focus:outline-none" onClick={toggleMenu}>
                                 <Link className="text-sm leading-snug tracking-tight" href="/projects">
                                     Projects
                                 </Link>

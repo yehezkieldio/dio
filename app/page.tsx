@@ -9,8 +9,6 @@ import { socials } from "@/content/socials";
 export default function Home() {
     return (
         <>
-            <div className="absolute inset-x-0 z-10 m-40 h-80 max-w-lg bg-gradient-to-tr from-accent via-background to-accent blur-[218px]"></div>
-            <NavigationMenu />
             <main className="relative z-20 mx-4 mt-8 max-w-[720px] lg:mx-auto">
                 <PersonalProfile
                     header_introduction="Hello, I'm"
