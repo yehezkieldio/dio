@@ -19,7 +19,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={cn(PlusJakartaSans.variable, "min-h-screen bg-background font-sans antialiased")}>
-                {children}
+                <div className="relative z-40 min-h-screen overflow-x-hidden md:overflow-x-visible">{children}</div>
             </body>
         </html>
     );
