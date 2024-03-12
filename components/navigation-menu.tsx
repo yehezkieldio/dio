@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Icon } from "@/components/ui/icon";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const NavigationMenu = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,8 +34,13 @@ const NavigationMenu = () => {
                         exit={{ opacity: 0 }}
                         className="fixed left-0 top-0 flex h-full w-full items-center justify-center bg-slate-950"
                     >
-                        <motion.div className="flex flex-col items-center justify-center gap-4 rounded-md bg-slate-950 p-8">
-                            <p className="text-sm leading-snug tracking-tight">WIP</p>
+                        <motion.div className="flex flex-row items-center justify-center gap-4 rounded-md bg-slate-950 p-8">
+                            <Button variant="outline" className="focus:outline-none">
+                                <Link className="text-sm leading-snug tracking-tight" href="/projects">
+                                    Projects
+                                </Link>
+                            </Button>
+
                             <Button variant="outline" onClick={toggleMenu} className="focus:outline-none">
                                 <Icon name="X" size={24} />
                             </Button>
