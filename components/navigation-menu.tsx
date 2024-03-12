@@ -13,13 +13,13 @@ const NavigationMenu = () => {
     };
 
     return (
-        <header className="relative z-20 mx-4 mt-8 max-w-[720px] lg:mx-auto">
+        <header className="relative z-[99] mx-4 mt-8 max-w-[720px] lg:mx-auto">
             <nav className="flex items-center justify-between">
                 <a href="/" className="text-lg font-bold leading-snug tracking-tight">
                     Yehezkiel Dio
                 </a>
                 <div className="flex flex-row gap-8">
-                    <Button variant="outline" onClick={toggleMenu} className="focus:outline-none">
+                    <Button variant="outline" onClick={toggleMenu} className="border-transparent focus:outline-none">
                         <Icon name="Menu" size={24} />
                     </Button>
                 </div>
